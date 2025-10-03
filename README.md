@@ -1,6 +1,6 @@
 # Customer Churn Early Warning — Impact-Focused Project
 
-**Recruiter Perspective:** This repo is structured like a product, not a homework submission. It demonstrates business framing, measurable outcomes, API deployment, and dashboards — exactly what a hiring team looks for.
+**Perspective:** This repo is structured like a product. It demonstrates business framing, measurable outcomes, API deployment, and dashboards exactly what a hiring team looks for.
 
 ## TL;DR Impact
 - **Problem:** Companies lose revenue when customers churn unexpectedly.
@@ -56,4 +56,4 @@ curl -X POST http://localhost:8787/predict -H "Content-Type: application/json" -
 ```
 
 ---
-**This project shows recruiters**: outcome-driven framing, deployable code, CI, tests, and a polished README.
+**This project shows**: outcome-driven framing, deployable code, CI, tests, and a polished README.
