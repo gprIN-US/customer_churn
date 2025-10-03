@@ -1,0 +1,19 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8787:8787"
+    environment:
+      - RISK_THRESHOLD=${RISK_THRESHOLD:-0.5}
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    ports:
+      - "8765:8765"
+    environment:
+      - API_URL=http://api:8787
+    depends_on:
+      - api
